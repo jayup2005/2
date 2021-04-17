@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    list-style-type: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Baloo Chettan 2', cursive;
+
+}
+
+html{
+
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    
+}
+
+.nav{
+
+    float: right;
+}
+
+.navbar-heading{
+
+    font-family:'Akaya Telivigala', cursive;
+    margin-top: 10px;
+    margin-bottom: 7px;
+    color: #fff;
+}
+
+
+
+
+
+
+
+.header{
+
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:  0 5rem;
+    
+}
+
+.image-wrapper{
+
+    width: 90rem;
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+  margin-right: 2rem;
+}
+
+.header-image{
+
+    width: 80%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.info-wrapper{
+
+width: 100%;
+
+text-align: center;
+
+
+
+}
+
+.name{
+
+    font-size: 6rem;
+    margin-bottom: 5rem;
+
+}
+
+.header-paragraph{
+
+    font-size: 3rem;
+    text-align: justify;
+
+}
+
+.info-detail{
+
+    font-size: 2rem;
+    text-align: justify;
+    margin-top: 3rem;
+
+
+}
+
+.about{
+
+    width: 100%;
+    height: 40vh;
+    background-color: #ccc;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+
+}
+
+.section-heading{
+
+    font-size: 6rem;
+    margin-bottom: 2rem;
+
+}
+
+.about p{
+
+    text-align: center;
+    width: 70%;
+    font-size: 2rem;
+
+}
+.skills {
+
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5rem;
+
+
+}
+
+.list{
+
+    display: flex;
+
+
+}
+
+.list-image{
+
+    width: 100%;
+
+}
+
+.list-item{
+width: 15rem;
+background-color: #ccc;
+height: 20rem;
+margin: 2rem 5rem;
+border-radius: 2rem;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 1rem;
+box-shadow: 0 0.5rem 1rem #ddd;
+transition: all 0.5s;
+
+
+}
+
+.list-item:hover{
+
+    box-shadow: 0 1rem 2rem #ddd;
+    transform: scale(1.2);
+
+}
+
+.footer{
+
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+
+
+}
+
+.footer-text{
+
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    font-size: 2rem;
+
+
+}
+
+.social-media{
+
+    font-size: 2rem;
+
+
+}
+
+.social-media i{
+
+    margin-right: 3rem;
+}
+
+
+/* responsive  */
+
+@media (max-width:1000px){
+
+    .name{
+            font-size: 4rem;
+            margin-bottom: 2rem;
+
+    }
+
+    .header-paragraph{
+
+        font-size: 1.5rem;
+        text-align: center;
+
+
+    }
+
+    .info-detail{
+
+        font-size:1.5rem;
+        text-align: center;
+    }
+
+    .nav{
+
+        padding-left: 1rem;
+
+    }
+
+    .header{
+        flex-direction: column;
+    }
+
+    .image-wrapper{
+
+        width: 20rem;
+        margin-top: 3rem;
+        margin-right: 0;
+        
+    }
+
+    .list-item{
+        width: 8rem;
+        height: 10rem
+
+
+
+    }
+
+
+    .section-heading{
+
+        margin: 1rem 0;
+        font-size: 4rem;
+    }
+    
+    .about p{
+
+font-size: 1.5rem;
+    }
+
+    .skills{
+
+        height: 80vh;
+
+    }
+
+    .footer-text{
+
+        font-size: 1.5rem;
+    }
+
+    .footer{
+
+        padding: 1rem;
+
+    }
+
+    .navbar-header{
+       display: flex;
+
+    }
+
+    .navbar-header button{
+        position: absolute;
+        right: 0;
+    }
+
+    .navbar-heading{
+        font-size: 3rem;
+        margin-left: 2rem; 
+    }
+    
+        
+
+}
+
+
+
+@media (max-width: 650px){
+
+.footer-text{
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+}
+
+
+
+@media (max-width: 500px){
+
+    .html{
+        font-size: 55%;
+    }
+
+    .skillsl{
+
+        height: 60vh;
+ 
+   }
+
+   .list-item{
+
+    margin: 16px 20px;
+   }
+
+   .header-paragraph{
+       margin-bottom: 5px;
+   }
+
+   .header{
+
+    margin-bottom: 10px;
+   }
+
+   .navbar-heading{
+
+       position: absolute;
+       left: 50%;
+       transform: translatex(-50%);
+       margin-left: 0;
+   }
+
+}

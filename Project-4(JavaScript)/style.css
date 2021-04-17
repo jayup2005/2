@@ -1,0 +1,24 @@
+.div{
+    height: 100vh;
+    width: 90%;
+    background-color: burlywood;
+    transform: translateX(-105%);
+    transition: transform 0.5s;
+}
+
+body{
+ position:relative;
+
+}
+
+.btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+ 
+.change{
+
+    transform: translateX(0);
+}
